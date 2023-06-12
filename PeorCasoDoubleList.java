@@ -8,7 +8,12 @@ public class PeorCasoDoubleList {
         DoublyLinkedList<Integer> lista = new DoublyLinkedList<>();
 
         for (int i = a; i > 0; i--) {
-            lista.insertFirst(i);
+            if (i%2 == 0){
+                lista.insertFirst(i);
+            } else {
+                lista.insertLast(i);
+            }
+            
         }
 
         return lista;
